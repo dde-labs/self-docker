@@ -1,0 +1,8 @@
+pytest
+python-dotenv
+
+# Core package
+docker==7.1.0
+
+# For pull image from the GAR
+google-auth==2.38.0
