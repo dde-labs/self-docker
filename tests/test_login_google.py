@@ -22,16 +22,6 @@ def test_login_to_google(client):
     )
     assert rs == {'IdentityToken': '', 'Status': 'Login Succeeded'}
 
-    rs = client.pull(
-        repository=(
-            "asia-southeast1-docker.pkg.dev/scg-cbm-do-dev-rg/ar-data360-docker"
-            "/data360-de-push-gar-poc"
-        ),
-        tag="latest",
-    )
-    print(type(rs))
-    print(rs)
-
 
 def test_login_to_google_base64(client):
     rs = client.login(

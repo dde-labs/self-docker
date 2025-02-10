@@ -7,5 +7,5 @@ Self sandbox for create interact object to Docker via Python
 Start create the Docker image from the local Dockerfile.
 
 ```shell
-docker build -t docker-image-local -f ./.conatiner/Dockerfile .
+docker build -t docker-image-local -f ./.container/Dockerfile .
 ```
