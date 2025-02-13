@@ -15,6 +15,19 @@ Start create the Docker image from the local Dockerfile.
 docker build -t docker-image-local -f ./.container/Dockerfile .
 ```
 
+> [!NOTE]
+> If you want to manual run the Docker container (Windows).
+> 
+> ```shell
+> docker run -v "${pwd}/secrets:/secret" docker-image-local:latest
+> ```
+
+> [!NOTE]
+> Delete container
+> ```shell
+> foreach ($cnt in $(docker ps -aq)) {docker rm $cnt;Write-Host "$cnt deleted"}
+> ```
+
 ## :speech_balloon: Contribute
 
 I do not think this project will go around the world because it has specific propose,

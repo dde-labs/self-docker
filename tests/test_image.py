@@ -21,6 +21,7 @@ def test_build(client, test_path: Path, docker_path: Path):
         quiet=False,
         decode=True,
         rm=True,
+        nocache=True,
     )
     for line in image:
         print(line)

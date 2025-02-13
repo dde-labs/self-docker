@@ -39,7 +39,10 @@ class Docker:
                 self.image,
                 command=self.command,
                 environment=self.environment,
-                volumes={host: {'bind': container, 'mode': 'rw'} for host, container in self.volumes.items()},
+                volumes={
+                    host: {'bind': container, 'mode': 'rw'}
+                    for host, container in self.volumes.items()
+                },
                 auto_remove=self.auto_remove,
                 detach=True,
             )
