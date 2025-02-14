@@ -1,5 +1,15 @@
 .git
 .venv
+docs
+logs
 tests
 requirements.txt
 .gitignore
+
+# Credential file
+.credential.json
+
+# Metadata file
+LICENSE
+NOTED.md
+README.md
